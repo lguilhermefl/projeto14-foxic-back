@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import router from './routes/index.js';
-import populateProductsCollection from './../utils/insertProducts.js';
+import populateProductsCollection from './utils/insertProducts.js';
 populateProductsCollection();
 
 const app = express();
