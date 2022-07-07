@@ -1,4 +1,4 @@
-import db from './../src/db.js';
+import db from '../db.js';
 import staticProducts from './data/products.js';
 
 export default async function(){
