@@ -1,7 +1,9 @@
-import { Router } from 'express';
+import { Router } from "express";
+import authRouter from "./authRouter.js";
 import db from './../db.js';
 
 const router = Router();
+router.use(authRouter);
 
 router.get('/products', async (req, res, next)=>{
 
