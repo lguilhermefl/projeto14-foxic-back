@@ -27,7 +27,7 @@ export default [
         ]
     },
     {
-        name: 'Peg Cropped Cuffed Pants',
+        name: 'Peg Cropped Cuffed',
         description: `Model is 5'9" wearing Size XS TallAnd without further ado, we give you our finest Shopify Theme FOXic! It is a subtle, complex and yet an extremely easy to use template for anyone, who wants to create own website in ANY area of expertise.`,
         value: 74,
         category: 'women',
@@ -54,7 +54,7 @@ export default [
         ]
     },
     {
-        name: 'Genuine Leather Strap Watch',
+        name: 'Genuine Leather',
         description: `Model is 5'9" wearing Size XS TallAnd without further ado, we give you our finest Shopify Theme FOXic! It is a subtle, complex and yet an extremely easy to use template for anyone, who wants to create own website in ANY area of expertise.`,
         value: 90,
         category: 'men',
