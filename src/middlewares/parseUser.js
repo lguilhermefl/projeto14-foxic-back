@@ -8,8 +8,6 @@ export default async function(req, res, next){
     if(!req.session) req.session = {};
     if(!req.session.user) req.session.user = {};
 
-    console.log('token antes ', token);
-
     if(token){
 
         const sessionRegister = await db.collection('sessions').findOne({ token });
