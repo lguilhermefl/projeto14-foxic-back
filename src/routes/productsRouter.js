@@ -28,4 +28,22 @@ router.get('/', async (req, res, next)=>{
 
 });
 
+router.get('/:productName', async (req, res, next)=>{
+
+    const { productName } =  req.params;
+    const productsCollection = db.collection('products');
+
+    try {
+        
+        const product = await productsCollection.findOne({ name: productName });
+        if(product) return res.send(product);
+        res.sendStatus(404);
+
+    } catch (err) {
+        console.log(err);
+        res.status(500).send(err.message);
+    }
+
+});
+
 export default router;
