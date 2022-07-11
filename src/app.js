@@ -2,6 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import router from './routes/index.js';
 import populateProductsCollection from './utils/insertProducts.js';
+import dotenv from 'dotenv';
+dotenv.config();
 populateProductsCollection();
 
 const app = express();
