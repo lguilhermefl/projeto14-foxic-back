@@ -43,7 +43,7 @@ async function validateCheckout(req, res, next) {
 
     totalValue = Number(sanitizeString(totalValue));
 
-    req.session.order = { shippingAdress, paymentInfo, orderSummary, totalValue };
+    req.session.order = { shippingAdress, orderSummary, totalValue };
     next();
 };
 
